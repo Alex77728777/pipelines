@@ -25,4 +25,4 @@ jobs:
       with:
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/actions-busybox:${{ github.sha }}
+        tags: "championsleague12/actions-busybox:${GITHUB_SHA::7}"
