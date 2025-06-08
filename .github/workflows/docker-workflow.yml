@@ -25,4 +25,4 @@ jobs:
       with:
         file: ./Dockerfile
         push: true
-        tags: "championsleague12/actions-busybox:${GITHUB_SHA::7}"
+        tags: "championsleague12/actions-busybox:latest"
