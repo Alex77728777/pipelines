@@ -14,8 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Set image tag
-        id: set_tag
-        run: |
+      run: |
           IMAGE_TAG="${GITHUB_SHA::7}"
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
     - name: Docker Setup Buildx
